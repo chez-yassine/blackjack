@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+DEFAULT FONT STYLE
+*/
+html, body, input, select, textarea, button
+{
+    font-family: Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+html
+{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-align: left;
+    direction: ltr;
+    background-color: #000119;
+    color: #F0F0F0;
+}
+
+
+
+/*
+** BLOCK ELEMENTS
+*/
+address, article, aside, blockquote, canvas, details, div, dl,
+fieldset, figure, figcaption, footer, form,
+header, hr, li, main, nav, ol, noscript, p, pre, section, ul, video
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    background-color: transparent;
+    color: inherit;
+    overflow-wrap: break-word;
+}
+
+footer
+{
+    margin: 3rem auto 5rem;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #DDD;
+}
+
+footer > a.resource
+{
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/*
+** INLINE ELEMENTS
+*/
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, kbd, map, object,
+output, q, samp, small, span, strong, sub, sup, time, tt, var
+{
+    display: inline;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+/*
+** INLINE-BLOCK ELEMENTS
+*/
+button, img, input, select, textarea, summary, label
+{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/*
+** NO DISPLAY ELEMENTS
+*/
+script, input[type="hidden"], .hidden
+{
+    display: none;
+}
+
+/*
+GENERAL HYPERLINKS STYLE
+*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #263375;
+    text-decoration: underline;
+}
+
+a:active, a:focus
+{
+    color: #252566;
+    text-decoration: none;
+}
+
+
+/*
+FORM & INPUT ELEMENTS
+*/
+
+/* input text */
+textarea, input[type="text"], input[type="email"], input[type="password"], input[type="url"], input[type="file"]
+{
+    display: inline-block;
+    width: auto;
+    min-width: 220px;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0.25em;
+    font-size: 0.9rem;
+    border: solid 1px #444;
+    outline-color: #04AA6D;
+    border-radius: 3px;
+}
+
+textarea {
+    min-height: 4rem;
+    resize: vertical;
+}
+
+
+/* BUTTONS */
+input[type="submit"], button, input[type="reset"], input[type="button"]
+{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0.375em auto;
+    padding: 0 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #FFA;
+    background-image: url("images/btnnoise.png");
+    color: #323;
+    border-radius: 1.5rem;
+    border: solid 2px #323;
+    cursor: pointer;
+}
+
+input[type="submit"]:active, button:active, input[type="reset"]:active, input[type="button"]:active
+{
+    box-shadow: inset -3px 3px 15px -5px #323;
+}
+
+/* disabled buttons */
+input[type="submit"]:disabled, button:disabled, input[type="reset"]:disabled, input[type="button"]:disabled
+{
+    background-color: #CCC;
+    color: #999;
+    box-shadow: none;
+    border-color: #999;
+    opacity: 0.5;
+}
+
+
+
+/*
+HTML HEADLINES h1-h6
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    width: 100%;
+    letter-spacing: 1px;
+    padding: 0.25em;
+}
+
+h1 {
+    margin: 0 0 1em;
+    font-size: 1.75rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 0.5em 0 1em;
+    font-size: 1.625rem;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+h3 {
+    margin: 0.25em 0 0.75em;
+    margin: 0.5em 0 0.75em;
+    font-size: 1.375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h4 {
+    margin: 0.25em 0 0.5em;
+    margin-top: 1em;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h5 {
+    margin: 0.75em 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+h6 {
+    margin: 0.75em 0;
+    font-weight: 900;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+}
+
+
+
+/*
+* custom input radio button "bb" (big button)
+*/
+
+/* The container - text always inside the container */
+label.inpt_cstm-radio-bb
+{
+  position: relative;
+  display: inline-block;
+  margin: 0.25em 1em;
+  padding-left: 30px;
+  min-height: 20px;
+  min-width: 20px;
+  line-height: 20px;
+  user-select: none;
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+/* hide default radio button */
+label.inpt_cstm-radio-bb input[type="radio"]
+{
+  position: absolute;
+  visibility: none;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+/* custom radio button */
+label.inpt_cstm-radio-bb i
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #e0e0e0;
+  border: solid 5px #e0e0e0;
+  border-radius: 25px;
+  outline: solid 2px #aeaeae;
+}
+
+/* radio button indicator */
+label.inpt_cstm-radio-bb:hover i
+{
+  border-color: #eee;
+  background-color: #eee;
+}
+
+/* radio button indicator checked */
+label.inpt_cstm-radio-bb input:checked ~ i {
+  background-color: #283618;
+  outline-color: #888;
+}
